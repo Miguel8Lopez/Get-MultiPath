@@ -14,10 +14,10 @@ Check if ESXi multipath is homogeneous in your infrastructure
 1. A table with the number of paths on each HBA
 ![Image of Multipath Table](/images/multipath_table.JPG)
 
-2. .csv files with a list of paths, HBAs and SATP policy.
+1. .csv files with a list of paths, HBAs and SATP policy.
   1. Config.Stg.HBAs.csv
-  2. Config.Stg.MultiPath.csv
-  3. Config.Stg.SATP.csv
+  1. Config.Stg.MultiPath.csv
+  1. Config.Stg.SATP.csv
 
 
   The csv files could be imported to MS Excel and convert to Pivot Tables for further analisys. Here are some examples:
@@ -25,8 +25,9 @@ Check if ESXi multipath is homogeneous in your infrastructure
 ![Image of Multipath HBAs](/images/multipath_hbas.JPG)
 
 * Check if multipath configuration (SATP and PSP) is homogeneous on ESXi hosts:
+* Example 1: 
 ![Image of Multipath HBAs](/images/multipath_paths.JPG)
-
+* Example 1: 
 ![Image of Multipath HBAs](/images/multipath_paths2.JPG)
 
 
@@ -63,12 +64,15 @@ When scritp execution is finished, three .csv files are written to c:\Temp (you 
 You can use the .xlsx attached to import these files. Simply change the three data connections with your 3 csv files.
 
 Select "Connections" command from Data menu.
+
 ![Image of Multipath HBAs](/images/multipath_excel01.JPG)
 
 Edit each connection to point to your .csv files.
+
 ![Image of Multipath HBAs](/images/multipath_excel02.JPG)
 
 Complete the "Text Import Wizard"
+
 ![Image of Multipath HBAs](/images/multipath_excel03.JPG)![Image of Multipath HBAs](/images/multipath_excel04.JPG)![Image of Multipath HBAs](/images/multipath_excel05.JPG)
 
 
@@ -95,20 +99,15 @@ Required privilege 'Host.Config.NetService' ("Host / Configuration / Security Pr
 
 If TSM-SSH service is started in your ESXi hosts, 'Host.Config.NetService' privilege is not needed.
 
-
 If you want to run this script as a Scheduled Task, you can use these functions to store credentials securely:
-
-http://powershell.com/cs/blogs/tips/archive/2014/03/28/exporting-and-importing-credentials-in-powershell.aspx
+https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/exporting-and-importing-credentials-in-powershell
 
 
 ### PARAMETER ESXiusername
 Username with SSH access to ESXi. Either local or Domain username ("domain\ESX Admins" member)
 
-
-If you want to run this script as a Scheduled Task, you can use these functions to store credentials securely
-
-http://powershell.com/cs/blogs/tips/archive/2014/03/28/exporting-and-importing-credentials-in-powershell.aspx
-
+If you want to run this script as a Scheduled Task, you can use these functions to store credentials securely:
+https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/exporting-and-importing-credentials-in-powershell
 
 
 ### PARAMETER HBAonly
