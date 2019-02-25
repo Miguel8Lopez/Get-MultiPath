@@ -5,14 +5,14 @@ Check if ESXi multipath is homogeneous in your infrastructure
 
   Get HBA information and FC and iSCSI Multipath information from all ESXi hosts in -Server and -Location (optional)
 
-multipath_intro.JPG
+![Image of Multipath Intro](https://github.com/Miguel8Lopez/Get-MultiPath/multipath_intro.JPG)
 
 
 ## DESCRIPTION
 
   The script return:
 A table with the number of paths on each HBA
-multipath_table.JPG
+![Image of Multipath Table](https://github.com/Miguel8Lopez/Get-MultiPath/multipath_table.JPG)multipath_table.JPG
 .csv files with a list of paths, HBAs and SATP policy.
 
   The csv files could be imported to MS Excel and convert to Pivot Tables for further analisys. Here are some examples:
