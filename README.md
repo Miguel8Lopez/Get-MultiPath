@@ -5,44 +5,44 @@ Check if ESXi multipath is homogeneous in your infrastructure
 
   Get HBA information and FC and iSCSI Multipath information from all ESXi hosts in -Server and -Location (optional)
 
-![Image of Multipath Intro](/images/multipath_intro.JPG)
+![Image of Multipath Intro](/images/multipath_intro.jpg)
 
 
 ## DESCRIPTION
 
   The script return:
 A table with the number of paths on each HBA
-![Image of Multipath Table](/images/multipath_table.JPG)multipath_table.JPG
+![Image of Multipath Table](/images/multipath_table.JPG)
+
 .csv files with a list of paths, HBAs and SATP policy.
 
   The csv files could be imported to MS Excel and convert to Pivot Tables for further analisys. Here are some examples:
 Get HBA Vendor, Model, VID, DID, SVID, SDID, Driver, Firmware, Speed, status, etc on each ESXi host
-multipath_hbas.JPG
-
+![Image of Multipath HBAs](/images/multipath_hbas.JPG)
 
 Check if multipath configuration (SATP and PSP) is homogeneous on ESXi hosts:
-multipath_paths.JPG
+![Image of Multipath HBAs](/images/multipath_paths.JPG)
 
-multipath_paths2.JPG
+![Image of Multipath HBAs](/images/multipath_paths2.JPG)
 
 
 Check path state (active, standby, dead)
-multipath_status.JPG
+![Image of Multipath HBAs](/images/multipath_status.JPG)
 
 Check IOPS Limit and IOPS Type in Round Robin paths
-multipath_iops.JPG
+![Image of Multipath HBAs](/images/multipath_iops.JPG)
 
 
 Check if LUNs are presented to ESXi hosts with the same LUN ID
-multipath_lunid.JPG
+![Image of Multipath HBAs](/images/multipath_lunid.JPG)
 
 
 Get the sum of active/passive preferred/not preferred paths on each SAN Port and how they are distributed on SAN Targets
-multipath_sanports.JPG
+![Image of Multipath HBAs](/images/multipath_sanports.JPG)
 
 
 Check if ESXi hosts have the same default PSP Policy for each SATP
-multipath_satp.JPG
+![Image of Multipath HBAs](/images/multipath_satp.JPG)
 
 
 Only one change is made to ESXi hosts: start/stop TSM-SSH Service to get HBA Firmware.
@@ -58,11 +58,11 @@ When scritp execution is finished, three .csv files are written to c:\Temp (you 
 You can use the .xlsx attached to import these files. Simply change the three data connections with your 3 csv files.
 
 Select "Connections" command from Data menu.
-multipath_excel01.JPG
+![Image of Multipath HBAs](/images/multipath_excel01.JPG)
 Edit each connection to point to your .csv files.
-multipath_excel02.JPG
+![Image of Multipath HBAs](/images/multipath_excel02.JPG)
 Complete the "Text Import Wizard"
-multipath_excel03.JPGmultipath_excel04.JPGmultipath_excel05.JPG
+![Image of Multipath HBAs](/images/multipath_excel03.JPG)![Image of Multipath HBAs](/images/multipath_excel04.JPG)![Image of Multipath HBAs](/images/multipath_excel05.JPG)
 
 
 
