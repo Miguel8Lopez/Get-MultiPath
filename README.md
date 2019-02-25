@@ -1,4 +1,4 @@
-pdate# Get-MultiPath. 
+# Get-MultiPath. 
 Check if ESXi multipath is homogeneous in your infrastructure
 
 ## SYNOPSIS
