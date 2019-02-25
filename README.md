@@ -15,9 +15,9 @@ Check if ESXi multipath is homogeneous in your infrastructure
 ![Image of Multipath Table](/images/multipath_table.JPG)
 
 1. .csv files with a list of paths, HBAs and SATP policy.
-  1. Config.Stg.HBAs.csv
-  1. Config.Stg.MultiPath.csv
-  1. Config.Stg.SATP.csv
+    1. Config.Stg.HBAs.csv
+    1. Config.Stg.MultiPath.csv
+    1. Config.Stg.SATP.csv
 
 
   The csv files could be imported to MS Excel and convert to Pivot Tables for further analisys. Here are some examples:
@@ -25,10 +25,12 @@ Check if ESXi multipath is homogeneous in your infrastructure
 ![Image of Multipath HBAs](/images/multipath_hbas.JPG)
 
 * Check if multipath configuration (SATP and PSP) is homogeneous on ESXi hosts:
-* Example 1: 
-![Image of Multipath HBAs](/images/multipath_paths.JPG)
-* Example 1: 
-![Image of Multipath HBAs](/images/multipath_paths2.JPG)
+  * Example 1: 
+  
+  ![Image of Multipath HBAs](/images/multipath_paths.JPG)
+  
+  * Example 2: 
+  ![Image of Multipath HBAs](/images/multipath_paths2.JPG)
 
 
 * Check path state (active, standby, dead)
@@ -145,12 +147,10 @@ Get-MultiPath -Server MyvCenterServer.MyDomain.com -VCusername MyDomain\VCreadon
 
 ## NOTES
 
-LinkedId: Miguel8Lopez
+LinkedId: https://www.linkedin.com/in/miguel8lopez/
 
 
 Thanks to:
-* alanrenouf‌
-* LucD‌
 * http://www.virtu-al.net/
 * http://www.lucd.info/
 * http://www.powershell.com/
